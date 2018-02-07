@@ -110,23 +110,14 @@ main .photos1:nth-child(2n-1) {
 	background: #ddd;
 }
 
-main .photos > div {
-	width: 30px;
-	height: 30px;
-	background-color: red;
-}
-
-/*  NEW STYLES  */
 main .header {
 	position: relative;
-	background-position: center;
+	background: no-repeat center;
 	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 main .header:before {
 	content: '';
-	z-index: 0;
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -134,32 +125,58 @@ main .header:before {
 	background: white;
 	top: 0;
 	left: 0;
-	opacity: 0.3;
 }
 
-main .photos, main .photos1 {
+main .photos,
+main .photos1 {
 	position: relative;
+	text-align: center;
+	padding: 20px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+main .photos .blur,
+main .photos1 .blur {
+	transition: all.2s ease-in;
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
 }
 
-main .photos:after, main .photos1:after {
-	content: '';
-	display: block;
+main .photos .blur,
+main .photos1 .blur {
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
-	background: white;
-	opacity: 0.2;
 }
 
-main .photos:hover .photos:after, main .photos1:hover .photos1:after {
+main .photos:hover .blur,
+main .photos1:hover .blur {
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
+
+main .photos h3,
+main .photos1 h3 {
+	transition: all.4s ease-in;
+	z-index: 100;
+	font-size: 45px;
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	bottom: -100px;
 	opacity: 0;
 }
 
-/*  NEW STYLES  */
+main .photos:hover  h3,
+main .photos1:hover  h3 {
+	bottom: 50%;
+	background: white;
+	opacity: 0.8;
+	transform: translate(0, 50%);
+}
 
 footer {
 	background-color: #141414;
