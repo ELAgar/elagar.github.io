@@ -11,7 +11,7 @@ $(document).ready( function () {
                 breakpoint: 960,
                 settings: {
                     item: 2,
-        			slideMove: 1,
+        			slideMove: 2,
                     slideMargin: 6
                 }
             },
@@ -23,6 +23,14 @@ $(document).ready( function () {
                 }
             }
         ]
+	});
+
+	$('.bxslider').bxSlider({
+		mode: 'horizontal',
+		hideControlOnEnd: true,
+		nextText: '',
+		prevText: '',
+		speed: 500
 	});
 
 });
