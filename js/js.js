@@ -11,13 +11,15 @@ $(document).ready( function () {
                 breakpoint: 960,
                 settings: {
                     item: 2,
+        			slideMove: 1,
                     slideMargin: 6
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
-                    item: 1
+                    item: 1,
+        			slideMove: 1
                 }
             }
         ]
