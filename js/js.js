@@ -33,4 +33,10 @@ $(document).ready( function () {
 		speed: 500
 	});
 
+	$('.slick .wr').slick({
+		// autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: true
+	});
+
 });

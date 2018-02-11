@@ -284,7 +284,7 @@ main .sliderMini .lSAction > .lSNext { right: -30px; }
 main .sliderMini .lSPager li a { color: white; font-weight: bold; font-size: 20px; text-decoration: none; }
 main .sliderMini .lSPager li a:hover { color: red; }
 main .sliderMini .lSPager li.active a { color: lightblue; text-decoration: underline; }
-main .sliderBig { background-color: #000; }
+main .sliderBig { background-color: #000; margin-bottom: 30px; }
 main .sliderBig .wr { padding: 30px 0; }
 main .sliderBig .bxslider li { height: 500px; background-repeat: no-repeat; background-size: cover; }
 main .sliderBig .bxslider li img { width: 100%; }
@@ -299,5 +299,10 @@ main .sliderBig .bx-wrapper .bx-prev, main .sliderBig .bx-wrapper .bx-next { tra
 main .sliderBig .bx-wrapper .bx-prev { left: 0; border-right-color: white; }
 main .sliderBig .bx-wrapper .bx-next { right: 0; border-left-color: white; }
 main .sliderBig .bx-wrapper .bx-prev:hover, main .sliderBig .bx-wrapper .bx-next:hover { opacity: 1; }
+main .slick { height: 550px; background: #000; padding: 50px 0; }
+main .slick .wr div { height: 450px; background-size: cover; background-repeat: no-repeat; }
+main .slick .wr .slick-prev:before, main .slick .wr .slick-next:before { font-size: 35px; }
+main .slick .wr .slick-next { right: 60px !important; }
+main .slick .wr .slick-prev { left: 47px !important; z-index: 100000; }
 
 /*# sourceMappingURL=style.css.map */
