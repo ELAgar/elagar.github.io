@@ -1,0 +1,57 @@
+header {
+	& {
+		background-color: #000;
+		height: 100px;
+		margin-bottom: 30px;
+	}
+
+	.wr {
+		background-color: #F2F2F2;	
+	}
+}
+
+main {
+		
+	.sliderMini {
+		& {
+			height: 350px;
+			background: black;
+		}
+
+		.wr {
+			padding: 50px 0;
+		}
+
+		ul {
+			li {
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+			.lSAction > .lSPrev  {
+				left: -30px;
+			}
+
+			.lSAction > .lSNext {
+				right: -30px;
+			}
+
+			.lSPager li a {
+				color: white;
+				font-weight: bold;
+				font-size: 20px;
+				text-decoration: none;
+			}
+			.lSPager li a:hover {
+				color: red;
+			}
+			.lSPager li.active a {
+				color: lightblue;
+				text-decoration: underline;
+			}
+	}
+}
