@@ -485,5 +485,7 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   header .wr .display-phone-menu span { border-radius: 50%; margin: 20px 0; width: 50px; line-height: 45px; height: 50px; font-size: 30px; border: 1px solid #fff; color: #fff; }
   header .wr .phone-menu a { font-size: 25px; }
   main .wr .ytp-cued-thumbnail-overlay { width: 480px; } }
+@media only screen and (max-width: 360px) { header .wr .soc .soc-net a { height: 72px; line-height: 120px; }
+  header .wr .soc .soc-net a span { width: 60px; height: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
