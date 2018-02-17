@@ -72,4 +72,8 @@ $(document).ready( function () {
         //     }
         // ]
     });
+
+    $('.display-phone-menu').on('click', function() {
+        $('.phone-menu').toggle('slow');
+    });
 });

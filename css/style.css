@@ -323,6 +323,10 @@ header .wr nav a:first-child { padding-left: 25px; }
 header .wr nav a:last-child { position: absolute; top: 0; right: 0; background-color: #313135; padding: 18px 60px; color: #eaa245; border-bottom: 2px solid #313135; }
 header .wr nav a:hover { text-decoration: underline; background-color: #313135; border-bottom-color: #313135; }
 header .wr nav a.active { border-bottom-color: #eaa245; }
+header .wr .display-phone-menu { display: none; text-align: center; width: 20px; float: right; color: black; height: 20px; line-height: 15px; font-size: 12px; margin: 5px 15px; border: 1px solid black; }
+header .wr .phone-menu { display: none; float: left; width: 100%; text-align: center; }
+header .wr .phone-menu a { display: inline-block; width: 100%; padding: 8px 0; text-decoration: none; color: #b1b1b1; }
+header .wr .phone-login { position: absolute; right: 10px; top: 20px; color: #fff; text-decoration: none; }
 
 main .slick { height: 645px; }
 main .slick .wr .slick-slide { height: 645px; background-image: url("../img/slide1.jpg"); background-repeat: no-repeat; background-size: cover; position: relative; }
@@ -449,12 +453,23 @@ footer .wr .subscribe p:nth-of-type(2) input[type="text"] { width: 65%; padding:
 footer .wr .subscribe p:nth-of-type(2) input[type="button"] { width: 35%; border: none; font-size: 14px; padding: 6px 17px; color: white; text-transform: uppercase; background: #eaa245; }
 footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-color: #d4923f; }
 
-@media only screen and (max-width: 1199px) { header .wr nav a { padding: 15px 13px; font-size: 15px; }
+@media only screen and (max-width: 1200px) { header .wr nav a { padding: 15px 13px; font-size: 15px; }
   header .wr nav a:nth-of-type(8) { padding: 15px 18px; } }
-@media only screen and (max-width: 1023px) { header .wr .logotype { width: 105px; height: 95px; background-size: contain; }
+@media only screen and (max-width: 1024px) { header .wr .logotype { width: 105px; height: 95px; background-size: contain; }
   header .wr .soc { padding-left: 105px; }
   header .wr nav, header .wr nav .soc { padding-left: 105px; }
   header .wr nav a { padding: 12px 10px; font-size: 14px; }
   header .wr nav a:nth-of-type(8) { padding: 12px 15px; } }
+@media only screen and (max-width: 768px) { header .wr { background-color: #48484f; }
+  header .wr .soc { text-align: center; padding-left: 0; }
+  header .wr .soc .soc-pages { float: left; text-align: center; width: 100%; padding: 0 5px; }
+  header .wr .soc .soc-net { float: right; width: 50%; text-align: left; padding: 5px 13.5px 4px 40px; }
+  header .wr .soc .number-phone { margin-right: 0; }
+  header .wr .logotype { width: 60px; height: 54px; background-size: contain; }
+  header .wr nav { display: none; }
+  header .wr .block { display: block; }
+  header .wr .display-phone-menu { display: block; }
+  header .wr .phone-login { display: block; }
+  main .slick { display: none; } }
 
 /*# sourceMappingURL=style.css.map */
