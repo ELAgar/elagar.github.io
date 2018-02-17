@@ -326,7 +326,7 @@ header .wr nav a.active { border-bottom-color: #eaa245; }
 header .wr .display-phone-menu { display: none; text-align: center; width: 20px; float: right; color: black; height: 20px; line-height: 15px; font-size: 12px; margin: 5px 15px; border: 1px solid black; }
 header .wr .phone-menu { display: none; float: left; width: 100%; text-align: center; }
 header .wr .phone-menu a { display: inline-block; width: 100%; padding: 8px 0; text-decoration: none; color: #b1b1b1; }
-header .wr .phone-login { position: absolute; right: 10px; top: 20px; color: #fff; text-decoration: none; }
+header .wr .phone-login { display: none; position: absolute; right: 10px; top: 20px; color: #fff; text-decoration: none; }
 
 main .slick { height: 645px; }
 main .slick .wr .slick-slide { height: 645px; background-image: url("../img/slide1.jpg"); background-repeat: no-repeat; background-size: cover; position: relative; }
@@ -467,7 +467,6 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   header .wr .soc .number-phone { margin-right: 0; }
   header .wr .logotype { width: 60px; height: 54px; background-size: contain; }
   header .wr nav { display: none; }
-  header .wr .block { display: block; }
   header .wr .display-phone-menu { display: block; }
   header .wr .phone-login { display: block; }
   main .slick { display: none; } }
