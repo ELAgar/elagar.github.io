@@ -471,9 +471,14 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   header .wr .display-phone-menu { display: block; }
   header .wr .phone-login { display: block; }
   main .slick { display: none; } }
-@media only screen and (max-width: 640px) { header .wr .logotype { display: block; position: relative; width: 100%; background-repeat: no-repeat; background-position: center; background-color: #eba244; } }
-@media only screen and (max-width: 480px) { header .wr .logotype { height: 100px; }
-  header .wr .soc .soc-pages a { display: block; font-size: 24px; margin: 10px; }
+@media only screen and (max-width: 640px) { header .wr .logotype { display: block; position: relative; width: 100%; height: 100px; background-repeat: no-repeat; background-position: center; background-color: #eba244; }
+  header .wr .soc { padding: 20px 0; }
+  header .wr .soc .soc-pages { padding: 10px 0; }
+  header .wr .soc .soc-pages a { font-size: 18px; line-height: unset; }
+  header .wr .soc .soc-net a { width: 26px; height: 26px; line-height: 36px; }
+  header .wr .soc .soc-net a span { width: 20px; height: 20px; }
+  header .wr .soc .number-phone { font-size: 18px; line-height: 37px; } }
+@media only screen and (max-width: 480px) { header .wr .soc .soc-pages a { display: block; font-size: 24px; margin: 10px; }
   header .wr .soc .soc-net { float: left; width: 100%; text-align: center; display: block; padding: 25px 0; }
   header .wr .soc .soc-net a { width: 20%; height: 96px; margin: 0 5px; line-height: 155px; background-color: #4C75A3; }
   header .wr .soc .soc-net a:nth-of-type(2) { background-color: #32CDFD; }
