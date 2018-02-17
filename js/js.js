@@ -73,7 +73,7 @@ $(document).ready( function () {
         // ]
     });
 
-    $('.display-phone-menu').on('click', function() {
+    $('.display-phone-menu span').on('click', function() {
         $('.phone-menu').toggle('slow');
     });
 });

@@ -23,7 +23,7 @@ p, body, html { font-size: 15px; font-family: "PT Sans", sans-serif; color: #484
 
 * { padding: 0; margin: 0; font-weight: normal; font-style: normal; box-sizing: border-box; text-decoration: none; outline: none; font-family: "PT Sans", sans-serif; }
 
-.wr { max-width: 1280px; min-width: 340px; padding: 0; margin: 0 auto; position: relative; }
+.wr { max-width: 1280px; min-width: 360px; padding: 0; margin: 0 auto; position: relative; }
 
 li { list-style: none; }
 
@@ -323,7 +323,8 @@ header .wr nav a:first-child { padding-left: 25px; }
 header .wr nav a:last-child { position: absolute; top: 0; right: 0; background-color: #313135; padding: 18px 60px; color: #eaa245; border-bottom: 2px solid #313135; }
 header .wr nav a:hover { text-decoration: underline; background-color: #313135; border-bottom-color: #313135; }
 header .wr nav a.active { border-bottom-color: #eaa245; }
-header .wr .display-phone-menu { display: none; text-align: center; width: 20px; float: right; color: black; height: 20px; line-height: 15px; font-size: 12px; margin: 5px 15px; border: 1px solid black; }
+header .wr .display-phone-menu { display: none; width: 100%; text-align: right; }
+header .wr .display-phone-menu span { display: inline-block; color: black; margin: 5px 15px; width: 20px; line-height: 15px; height: 20px; text-align: center; font-size: 12px; border: 1px solid black; }
 header .wr .phone-menu { display: none; float: left; width: 100%; text-align: center; }
 header .wr .phone-menu a { display: inline-block; width: 100%; padding: 8px 0; text-decoration: none; color: #b1b1b1; }
 header .wr .phone-login { display: none; position: absolute; right: 10px; top: 20px; color: #fff; text-decoration: none; }
@@ -470,5 +471,11 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   header .wr .display-phone-menu { display: block; }
   header .wr .phone-login { display: block; }
   main .slick { display: none; } }
+@media only screen and (max-width: 640px) { header .wr .logotype { display: block; position: relative; width: 100%; background-repeat: no-repeat; background-position: center; background-color: #eba244; } }
+@media only screen and (max-width: 480px) { header .wr .soc .soc-pages a { display: block; }
+  header .wr .soc .soc-net { float: left; width: 100%; text-align: center; display: block; padding-left: 20px; }
+  header .wr .soc .number-phone { display: block; width: 100%; float: left; text-align: center; }
+  header .wr .display-phone-menu { text-align: center; }
+  header .wr .display-phone-menu span { border-radius: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
