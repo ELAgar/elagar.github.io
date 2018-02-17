@@ -472,10 +472,18 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   header .wr .phone-login { display: block; }
   main .slick { display: none; } }
 @media only screen and (max-width: 640px) { header .wr .logotype { display: block; position: relative; width: 100%; background-repeat: no-repeat; background-position: center; background-color: #eba244; } }
-@media only screen and (max-width: 480px) { header .wr .soc .soc-pages a { display: block; }
-  header .wr .soc .soc-net { float: left; width: 100%; text-align: center; display: block; padding-left: 20px; }
-  header .wr .soc .number-phone { display: block; width: 100%; float: left; text-align: center; }
+@media only screen and (max-width: 480px) { header .wr .logotype { height: 100px; }
+  header .wr .soc .soc-pages a { display: block; font-size: 24px; margin: 10px; }
+  header .wr .soc .soc-net { float: left; width: 100%; text-align: center; display: block; padding: 25px 0; }
+  header .wr .soc .soc-net a { width: 20%; height: 96px; margin: 0 5px; line-height: 155px; background-color: #4C75A3; }
+  header .wr .soc .soc-net a:nth-of-type(2) { background-color: #32CDFD; }
+  header .wr .soc .soc-net a:nth-of-type(3) { background-color: #CE2F72; }
+  header .wr .soc .soc-net a:nth-of-type(4) { background-color: #3A589E; }
+  header .wr .soc .soc-net a span { width: 72px; height: 72px; }
+  header .wr .soc .number-phone { display: block; width: 100%; float: left; text-align: center; margin-bottom: 25px; font-size: 30px; }
   header .wr .display-phone-menu { text-align: center; }
-  header .wr .display-phone-menu span { border-radius: 50%; } }
+  header .wr .display-phone-menu span { border-radius: 50%; margin: 20px 0; width: 50px; line-height: 45px; height: 50px; font-size: 30px; border: 1px solid #fff; color: #fff; }
+  header .wr .phone-menu a { font-size: 25px; }
+  main .wr .ytp-cued-thumbnail-overlay { width: 480px; } }
 
 /*# sourceMappingURL=style.css.map */
