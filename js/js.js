@@ -3,6 +3,7 @@ $(document).ready( function () {
     $('.slick .wr').slick({
         dots: true,
         // fade: true,
+        arrows: false,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -76,4 +77,5 @@ $(document).ready( function () {
     $('.display-phone-menu span').on('click', function() {
         $('.phone-menu').toggle('slow');
     });
+
 });

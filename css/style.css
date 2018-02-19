@@ -324,9 +324,9 @@ header .wr nav a:last-child { position: absolute; top: 0; right: 0; background-c
 header .wr nav a:hover { text-decoration: underline; background-color: #313135; border-bottom-color: #313135; }
 header .wr nav a.active { border-bottom-color: #eaa245; }
 header .wr .display-phone-menu { display: none; width: 100%; text-align: right; }
-header .wr .display-phone-menu span { display: inline-block; color: black; margin: 5px 15px; width: 20px; line-height: 15px; height: 20px; text-align: center; font-size: 12px; border: 1px solid black; }
-header .wr .phone-menu { display: none; float: left; width: 100%; text-align: center; }
-header .wr .phone-menu a { display: inline-block; width: 100%; padding: 8px 0; text-decoration: none; color: #b1b1b1; }
+header .wr .display-phone-menu span { transition: all 0.5s ease-in; display: inline-block; margin: 15px 15px; width: 20px; height: 20px; font-weight: bold; font-size: 30px; color: black; line-height: 18px; letter-spacing: 1px; }
+header .wr .phone-menu { display: none; position: absolute; background: #131313a8; width: 100%; text-align: center; bottom: -227px; z-index: 1000; padding-bottom: 10px; }
+header .wr .phone-menu a { display: inline-block; width: 100%; padding: 8px 0; text-decoration: none; color: #fff; }
 header .wr .phone-login { display: none; position: absolute; right: 10px; top: 20px; color: #fff; text-decoration: none; }
 
 main .slick { height: 645px; }
@@ -387,9 +387,11 @@ main .magazine .description ul li:nth-of-type(3) span { background-image: url(".
 main .social-projects .left, main .social-projects .right { width: 640px; height: 510px; float: left; }
 main .social-projects .left { padding-top: 60px; position: relative; }
 main .social-projects .left h2 { font-weight: bold; font-size: 30px; color: #eaa245; text-align: right; padding-right: 10px; margin-bottom: 50px; }
+main .social-projects .left .h2_phone { display: none; }
 main .social-projects .left h3, main .social-projects .left p { font-size: 22px; color: #48484f; }
 main .social-projects .left h3 { font-weight: bold; text-align: center; text-transform: uppercase; margin-bottom: 25px; }
 main .social-projects .left p { text-align: center; line-height: 160%; }
+main .social-projects .left .phone { display: none; }
 main .social-projects .left .picture, main .social-projects .left .soc-net-social { width: 320px; height: 160px; display: inline-block; position: absolute; bottom: 0; }
 main .social-projects .left .picture { left: 0; }
 main .social-projects .left .picture .group-img, main .social-projects .left .picture .name-school { width: 160px; height: 160px; float: left; }
@@ -408,6 +410,7 @@ main .social-projects .left .soc-net-social a:nth-of-type(4) span { background-i
 main .social-projects .left .soc-net-social a:nth-of-type(4):hover { background-color: #3A589E; }
 main .social-projects .right { background-color: #eaa245; padding-top: 60px; }
 main .social-projects .right h2 { font-weight: bold; font-size: 30px; color: #48484f; padding-left: 10px; margin-bottom: 55px; }
+main .social-projects .right .h2_phone { display: none; }
 main .social-projects .right h3, main .social-projects .right p { text-align: center; color: #fff; }
 main .social-projects .right h3 { font-size: 22px; font-weight: bold; text-transform: uppercase; margin-bottom: 35px; }
 main .social-projects .right p { font-size: 18px; line-height: 140%; padding: 0 70px; }
@@ -454,43 +457,159 @@ footer .wr .subscribe p:nth-of-type(2) input[type="text"] { width: 65%; padding:
 footer .wr .subscribe p:nth-of-type(2) input[type="button"] { width: 35%; border: none; font-size: 14px; padding: 6px 17px; color: white; text-transform: uppercase; background: #eaa245; }
 footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-color: #d4923f; }
 
-@media only screen and (max-width: 1200px) { header .wr nav a { padding: 15px 13px; font-size: 15px; }
-  header .wr nav a:nth-of-type(8) { padding: 15px 18px; } }
-@media only screen and (max-width: 1024px) { header .wr .logotype { width: 105px; height: 95px; background-size: contain; }
+@media only screen and (max-width: 1199px) { header .wr nav a { padding: 15px 13px; font-size: 15px; }
+  header .wr nav a:nth-of-type(8) { padding: 15px 18px; }
+  main .wr .community iframe { width: 542px; }
+  main .wr .community .tab-slider { width: 542px; }
+  main .wr .social-projects .left, main .wr .social-projects .right { width: 50%; }
+  footer .wr .logotype { width: 115px; height: 105px; background-size: contain; }
+  footer .wr .copyright { font-size: 12px; }
+  footer .wr .nav-and-soc nav a { margin: 0 12px; }
+  footer .wr .subscribe { margin-right: 115px; } }
+@media only screen and (max-width: 1023px) { header .wr .logotype { width: 105px; height: 95px; background-size: contain; }
   header .wr .soc { padding-left: 105px; }
   header .wr nav, header .wr nav .soc { padding-left: 105px; }
   header .wr nav a { padding: 12px 10px; font-size: 14px; }
-  header .wr nav a:nth-of-type(8) { padding: 12px 15px; } }
-@media only screen and (max-width: 768px) { header .wr { background-color: #48484f; }
-  header .wr .soc { text-align: center; padding-left: 0; }
-  header .wr .soc .soc-pages { float: left; text-align: center; width: 100%; padding: 0 5px; }
-  header .wr .soc .soc-net { float: right; width: 50%; text-align: left; padding: 5px 13.5px 4px 40px; }
-  header .wr .soc .number-phone { margin-right: 0; }
-  header .wr .logotype { width: 60px; height: 54px; background-size: contain; }
-  header .wr nav { display: none; }
-  header .wr .display-phone-menu { display: block; }
-  header .wr .phone-login { display: block; }
-  main .slick { display: none; } }
-@media only screen and (max-width: 640px) { header .wr .logotype { display: block; position: relative; width: 100%; height: 100px; background-repeat: no-repeat; background-position: center; background-color: #eba244; }
-  header .wr .soc { padding: 20px 0; }
-  header .wr .soc .soc-pages { padding: 10px 0; }
+  header .wr nav a:nth-of-type(8) { padding: 12px 15px; }
+  main .slick .wr .slick-slide .title { left: 80px; }
+  main .slick .wr .slick-slide .programs-name { width: 263px; height: 263px; }
+  main .slick .wr .slick-dots { padding-left: 80px; }
+  main .wr .community iframe { width: 480px; height: 263px; }
+  main .wr .community .corp-stars { width: 263px; height: 263px; font-size: 25px; }
+  main .wr .community #calendar2 { width: 263px; height: 263px; }
+  main .wr .community .tab-slider { width: 480px; }
+  main .wr .community .school, main .wr .community .club-graduate { width: 263px; }
+  main .wr .community .school .img-school { height: 125px; }
+  main .wr .community .club-graduate h3, main .wr .community .club-graduate ul { margin-bottom: 30px; }
+  main .wr .magazine .img-magazine { width: 40%; background-position: 110px 45px; }
+  main .wr .magazine .description { width: 50%; }
+  main .wr .social-projects .left .picture { width: 65%; }
+  main .wr .social-projects .left .picture .group-img, main .wr .social-projects .left .picture .name-school { width: 50%; }
+  main .wr .social-projects .left .soc-net-social { width: 35%; line-height: 50px; padding: 35px 0 0 0; }
+  main .wr .social-projects .left .soc-net-social a { margin: 0 6.25% 0 6.25%; }
+  main .wr .social-projects .right p { padding: 0 20px; }
+  main .wr .social-projects .right p br { display: none; }
+  footer .wr { padding-bottom: 35px; }
+  footer .wr .logotype { width: 105px; height: 95px; }
+  footer .wr .copyright { left: 6px; }
+  footer .wr .nav-and-soc { padding-left: 115px; }
+  footer .wr .nav-and-soc nav a { margin: 0 5px; }
+  footer .wr .nav-and-soc .soc-footer { padding: 5px 0 4px 20px; }
+  footer .wr .contacts { margin-left: 115px; }
+  footer .wr .subscribe { margin-right: 35px; } }
+@media only screen and (max-width: 767px) { header .wr .logotype { display: block; position: relative; width: 100%; height: 100px; background-repeat: no-repeat; background-position: center; background-color: #eba244; background-size: contain; }
+  header .wr .soc { padding: 20px 0; text-align: center; }
+  header .wr .soc .soc-pages { padding: 10px 0; float: left; text-align: center; width: 100%; }
   header .wr .soc .soc-pages a { font-size: 18px; line-height: unset; }
-  header .wr .soc .soc-net a { width: 26px; height: 26px; line-height: 36px; }
-  header .wr .soc .soc-net a span { width: 20px; height: 20px; }
-  header .wr .soc .number-phone { font-size: 18px; line-height: 37px; } }
-@media only screen and (max-width: 480px) { header .wr .soc .soc-pages a { display: block; font-size: 24px; margin: 10px; }
-  header .wr .soc .soc-net { float: left; width: 100%; text-align: center; display: block; padding: 25px 0; }
-  header .wr .soc .soc-net a { width: 20%; height: 96px; margin: 0 5px; line-height: 155px; background-color: #4C75A3; }
+  header .wr .soc .soc-net { float: right; width: 50%; text-align: left; padding: 5px 13.5px 4px 40px; }
+  header .wr .soc .soc-net a { width: 26px; height: 26px; line-height: 36px; background-color: #4C75A3; }
   header .wr .soc .soc-net a:nth-of-type(2) { background-color: #32CDFD; }
   header .wr .soc .soc-net a:nth-of-type(3) { background-color: #CE2F72; }
   header .wr .soc .soc-net a:nth-of-type(4) { background-color: #3A589E; }
+  header .wr .soc .soc-net a span { width: 20px; height: 20px; }
+  header .wr .soc .number-phone { font-size: 18px; line-height: 37px; margin-right: 0; }
+  header .wr nav { display: none; }
+  header .wr .display-phone-menu { display: block; }
+  header .wr .phone-login { display: block; }
+  main .slick { height: 400px; }
+  main .slick .wr .slick-slide { height: 400px; }
+  main .slick .wr .slick-slide .title { left: 20px; bottom: 60px; }
+  main .slick .wr .slick-slide .programs-name { width: 230px; height: 160px; }
+  main .slick .wr .slick-dots { padding-left: 20px; bottom: 30px; }
+  main .wr .community iframe { width: 100%; height: 350px; }
+  main .wr .community .corp-stars, main .wr .community #calendar2 { width: 50%; height: 280px; }
+  main .wr .community .corp-stars { border-bottom: 1px solid #e2e2e2; }
+  main .wr .community #calendar2 { display: block; word-spacing: 42px; line-height: 31px; }
+  main .wr .community .tab-slider { width: 100%; }
+  main .wr .community .club-graduate, main .wr .community .school { height: 420px; width: 50%; }
+  main .wr .community .club-graduate ul { margin-bottom: 50px; }
+  main .wr .dignity p { margin-bottom: 20px; }
+  main .wr .dignity ul li { width: 400px; margin-bottom: 30px; }
+  main .wr .dignity ul li .image { width: 100%; background-position: 135px 35px; display: inline-block; }
+  main .wr .dignity ul li:nth-of-type(2) .image { background-position: 155px 0; }
+  main .wr .dignity ul li:nth-of-type(3) .image { background-position: 160px 35px; }
+  main .wr .magazine { padding-top: 20px; }
+  main .wr .magazine .img-magazine { width: 100%; height: 370px; background-position: center; }
+  main .wr .magazine .description { width: 80%; margin-left: 10%; }
+  main .wr .magazine .description h2, main .wr .magazine .description p:nth-of-type(1) { text-align: center; }
+  main .wr .social-projects .left, main .wr .social-projects .right { height: 600px; padding-top: 30px; }
+  main .wr .social-projects .left p { font-size: 20px; line-height: 150%; padding: 0 30px; }
+  main .wr .social-projects .left .picture { width: 100%; bottom: 100px; }
+  main .wr .social-projects .left .picture .group-img { float: right; }
+  main .wr .social-projects .left .soc-net-social { width: 100%; height: 100px; }
+  main .wr .social-projects .right p { padding: 0 23px; }
+  main .wr .partners { padding: 40px 0 30px; }
+  main .wr .partners h2 { margin-bottom: 40px; }
+  main .wr .partners .coats li { width: 60%; background-position: 145px 5px; }
+  main .wr .partners .coats li:nth-of-type(1) { margin-bottom: 25px; }
+  main .wr .partners .coats li:nth-of-type(2), main .wr .partners .coats li:nth-of-type(3) { margin: 0; background-position: 170px 25px; }
+  main .wr .partners .coats li p { left: 0; text-align: center; width: 100%; padding: 0 60px; }
+  main .wr .partners .posters li { width: 100%; margin-bottom: 30px; margin-left: 0; }
+  footer .wr .copyright { top: 130px; }
+  footer .wr .nav-and-soc { width: 50%; float: left; padding: 0; margin: 0; padding-left: 135px; padding-top: 25px; }
+  footer .wr .nav-and-soc nav a { display: block; }
+  footer .wr .nav-and-soc .soc-footer { position: absolute; bottom: 40px; padding: 0; left: 15px; width: 100px; }
+  footer .wr .nav-and-soc .soc-footer a { margin-left: 10px; margin-bottom: 10px; }
+  footer .wr .contacts { width: 50%; margin: 0; float: left; padding: 0; margin-bottom: 40px; padding-top: 20px; }
+  footer .wr .subscribe { width: 50%; padding: 0; margin: 0; }
+  footer .wr .subscribe p:nth-of-type(1) { text-align: left; }
+  footer .wr .subscribe p:nth-of-type(2) input[type="button"] { padding: 6px; } }
+@media only screen and (max-width: 639px) { header .wr .logotype { display: block; position: relative; width: 100%; height: 100px; background-repeat: no-repeat; background-position: center; background-color: #eba244; }
+  header .wr .soc { padding: 20px 0; }
+  header .wr .soc .soc-pages { padding: 10px 0; }
+  header .wr .soc .soc-pages a { font-size: 18px; line-height: unset; }
+  header .wr .soc .soc-net a { width: 26px; height: 26px; line-height: 36px; background-color: #4C75A3; }
+  header .wr .soc .soc-net a:nth-of-type(2) { background-color: #32CDFD; }
+  header .wr .soc .soc-net a:nth-of-type(3) { background-color: #CE2F72; }
+  header .wr .soc .soc-net a:nth-of-type(4) { background-color: #3A589E; }
+  header .wr .soc .soc-net a span { width: 20px; height: 20px; }
+  header .wr .soc .number-phone { font-size: 18px; line-height: 37px; }
+  header .wr .phone-menu { bottom: -272px; padding-top: 10px; }
+  header .wr .phone-menu a { font-size: 20px; }
+  main .slick { height: 360px; }
+  main .slick .wr .slick-slide { height: 360px; }
+  main .slick .wr .slick-slide .title h2 { font-size: 40px; }
+  main .slick .wr .slick-slide .title p { font-size: 18px; }
+  main .slick .wr .slick-slide .programs-name { font-size: 25px; }
+  main .wr .community #calendar2 { word-spacing: 33px; }
+  main .wr .community .school, main .wr .community .club-graduate { height: 500px; }
+  main .wr .community .club-graduate ul { margin-bottom: 80px; }
+  main .wr .dignity p { padding: 0 40px; }
+  main .wr .dignity p br { display: none; }
+  main .wr .social-projects .left h2, main .wr .social-projects .right h2 { display: none; }
+  main .wr .social-projects .left { width: 100%; height: 930px; }
+  main .wr .social-projects .left p { margin-bottom: 30px; }
+  main .wr .social-projects .left h2 { display: none; }
+  main .wr .social-projects .left .h2_phone { display: block; text-align: center; }
+  main .wr .social-projects .left .right.phone { width: 100%; padding-top: 30px; background-color: #eaa245; display: block; }
+  main .wr .social-projects .left .right.phone h2 { font-weight: bold; font-size: 30px; color: #48484f; padding-left: 10px; margin-bottom: 55px; }
+  main .wr .social-projects .left .right.phone h3, main .wr .social-projects .left .right.phone p { text-align: center; color: #fff; }
+  main .wr .social-projects .left .right.phone h3 { font-size: 22px; font-weight: bold; text-transform: uppercase; margin-bottom: 35px; }
+  main .wr .social-projects .left .right.phone p { font-size: 18px; line-height: 140%; padding: 0 20px; }
+  main .wr .social-projects .left .right.phone p br { display: none; }
+  main .wr .social-projects .left .name-school { background: #f5a742; }
+  main .wr .social-projects .right { display: none; }
+  main .wr .partners .coats li:nth-of-type(1) { background-position: center top; }
+  main .wr .partners .coats li:nth-of-type(2), main .wr .partners .coats li:nth-of-type(3) { background-position: 130px 25px; }
+  footer .wr .logotype { width: 135px; height: 125px; }
+  footer .wr .copyright { top: 160px; left: 10px; font-size: 15px; }
+  footer .wr .nav-and-soc { width: 100%; padding-left: 0; text-align: center; }
+  footer .wr .nav-and-soc nav { width: 100%; margin-bottom: 40px; }
+  footer .wr .nav-and-soc .soc-footer { margin-bottom: 20px; position: relative; width: 100%; bottom: 0; left: 0; }
+  footer .wr .contacts { width: 100%; text-align: center; }
+  footer .wr .subscribe { width: 100%; text-align: center; }
+  footer .wr .subscribe p:nth-of-type(1) { text-align: center; }
+  footer .wr .subscribe p:nth-of-type(2) { width: 75%; display: inline-block; } }
+@media only screen and (max-width: 479px) { header .wr .soc .soc-pages a { display: block; font-size: 24px; margin: 10px; }
+  header .wr .soc .soc-net { float: left; width: 100%; text-align: center; display: block; padding: 25px 0; }
+  header .wr .soc .soc-net a { width: 20%; height: 96px; margin: 0 5px; line-height: 155px; }
   header .wr .soc .soc-net a span { width: 72px; height: 72px; }
   header .wr .soc .number-phone { display: block; width: 100%; float: left; text-align: center; margin-bottom: 25px; font-size: 30px; }
   header .wr .display-phone-menu { text-align: center; }
   header .wr .display-phone-menu span { border-radius: 50%; margin: 20px 0; width: 50px; line-height: 45px; height: 50px; font-size: 30px; border: 1px solid #fff; color: #fff; }
   header .wr .phone-menu a { font-size: 25px; }
   main .wr .ytp-cued-thumbnail-overlay { width: 480px; } }
-@media only screen and (max-width: 375px) { header .wr .soc .soc-net a { height: 72px; line-height: 120px; }
+@media only screen and (max-width: 374px) { header .wr .soc .soc-net a { height: 72px; line-height: 120px; }
   header .wr .soc .soc-net a span { width: 60px; height: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
