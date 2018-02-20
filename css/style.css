@@ -325,9 +325,8 @@ header .wr nav a:hover { text-decoration: underline; background-color: #313135; 
 header .wr nav a.active { border-bottom-color: #eaa245; }
 header .wr .display-phone-menu { display: none; width: 100%; text-align: right; }
 header .wr .display-phone-menu span { transition: all 0.5s ease-in; display: inline-block; margin: 15px 15px; width: 20px; height: 20px; font-weight: bold; font-size: 30px; color: black; line-height: 18px; letter-spacing: 1px; }
-header .wr .display-phone-menu .phone-menu { transition: all 0.4s ease-in; display: none; position: absolute; background: #131313a8; width: 100%; text-align: center; bottom: -227px; z-index: 1000; padding-bottom: 10px; }
-header .wr .display-phone-menu .phone-menu a { display: inline-block; width: 100%; padding: 8px 0; text-decoration: none; color: #fff; }
-header .wr .display-phone-menu:hover .phone-menu { display: block; }
+header .wr .phone-menu { display: none; position: absolute; background: #131313a8; width: 100%; text-align: center; bottom: -227px; z-index: 1000; padding-bottom: 10px; }
+header .wr .phone-menu a { display: inline-block; width: 100%; padding: 8px 0; text-decoration: none; color: #fff; }
 header .wr .phone-login { display: none; position: absolute; right: 10px; top: 20px; color: #fff; text-decoration: none; }
 
 main .slick { height: 645px; }
@@ -565,8 +564,8 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   header .wr .soc .soc-net a:nth-of-type(4) { background-color: #3A589E; }
   header .wr .soc .soc-net a span { width: 20px; height: 20px; }
   header .wr .soc .number-phone { font-size: 18px; line-height: 37px; }
-  header .wr .display-phone-menu .phone-menu { bottom: -272px; padding-top: 10px; }
-  header .wr .display-phone-menu .phone-menu a { font-size: 20px; }
+  header .wr .phone-menu { bottom: -272px; padding-top: 10px; }
+  header .wr .phone-menu a { font-size: 20px; }
   main .slick { height: 360px; }
   main .slick .wr .slick-slide { height: 360px; }
   main .slick .wr .slick-slide .title h2 { font-size: 40px; }
@@ -608,8 +607,8 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   header .wr .soc .number-phone { display: block; width: 100%; float: left; text-align: center; margin-bottom: 25px; font-size: 30px; }
   header .wr .display-phone-menu { text-align: center; }
   header .wr .display-phone-menu span { border-radius: 50%; margin: 20px 0; width: 50px; line-height: 45px; height: 50px; font-size: 30px; border: 1px solid #131313; color: #131313; }
-  header .wr .display-phone-menu .phone-menu { bottom: -307px; }
-  header .wr .display-phone-menu .phone-menu a { font-size: 25px; }
+  header .wr .phone-menu { bottom: -307px; }
+  header .wr .phone-menu a { font-size: 25px; }
   main .slick { height: 320px; }
   main .slick .wr .slick-slide { height: 320px; background-position: center center; }
   main .slick .wr .slick-slide .title h2 { font-size: 30px; }
