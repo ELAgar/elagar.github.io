@@ -124,7 +124,7 @@ main .wr #tabs .active {
     z-index: 100;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
     main .wr #nav {
         width: 205px;
     }
@@ -141,8 +141,7 @@ main .wr #tabs .active {
         width: 265px;
     }
 }
-
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     main .wr #tabs {
         width: 275px;
     }
@@ -151,7 +150,7 @@ main .wr #tabs .active {
         width: 205px;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     main .wr #tabs, main .wr #nav {
         width: 50%;
     }
@@ -164,8 +163,19 @@ main .wr #tabs .active {
         width: 300px;
     }
 }
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 640px) {
     main .wr #tabs .tab .slick-list.draggable {
         width: 250px;
+    }
+}
+@media screen and (max-width: 480px) {
+    main .wr #nav {
+        width: 40%;
+    }
+    main .wr #tabs {
+        width: 60%;
+    }
+    main .wr #tabs .tab .slick-list.draggable {
+        width: 218px;
     }
 }

@@ -457,7 +457,7 @@ footer .wr .subscribe p:nth-of-type(2) input[type="text"] { width: 65%; padding:
 footer .wr .subscribe p:nth-of-type(2) input[type="button"] { width: 35%; border: none; font-size: 14px; padding: 6px 17px; color: white; text-transform: uppercase; background: #eaa245; }
 footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-color: #d4923f; }
 
-@media only screen and (max-width: 1199px) { header .wr nav a { padding: 15px 13px; font-size: 15px; }
+@media only screen and (max-width: 1200px) { header .wr nav a { padding: 15px 13px; font-size: 15px; }
   header .wr nav a:nth-of-type(8) { padding: 15px 18px; }
   main .wr .community iframe { width: 542px; }
   main .wr .community .tab-slider { width: 542px; }
@@ -466,7 +466,7 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   footer .wr .copyright { font-size: 12px; }
   footer .wr .nav-and-soc nav a { margin: 0 12px; }
   footer .wr .subscribe { margin-right: 115px; } }
-@media only screen and (max-width: 1023px) { header .wr .logotype { width: 105px; height: 95px; background-size: contain; }
+@media only screen and (max-width: 1024px) { header .wr .logotype { width: 105px; height: 95px; background-size: contain; }
   header .wr .soc { padding-left: 105px; }
   header .wr nav, header .wr nav .soc { padding-left: 105px; }
   header .wr nav a { padding: 12px 10px; font-size: 14px; }
@@ -474,10 +474,10 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   main .slick .wr .slick-slide .title { left: 80px; }
   main .slick .wr .slick-slide .programs-name { width: 263px; height: 263px; }
   main .slick .wr .slick-dots { padding-left: 80px; }
-  main .wr .community iframe { width: 480px; height: 263px; }
+  main .wr .community iframe { width: 498px; height: 263px; }
   main .wr .community .corp-stars { width: 263px; height: 263px; font-size: 25px; }
   main .wr .community #calendar2 { width: 263px; height: 263px; }
-  main .wr .community .tab-slider { width: 480px; }
+  main .wr .community .tab-slider { width: 498px; }
   main .wr .community .school, main .wr .community .club-graduate { width: 263px; }
   main .wr .community .school .img-school { height: 125px; }
   main .wr .community .club-graduate h3, main .wr .community .club-graduate ul { margin-bottom: 30px; }
@@ -496,8 +496,8 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   footer .wr .nav-and-soc nav a { margin: 0 5px; }
   footer .wr .nav-and-soc .soc-footer { padding: 5px 0 4px 20px; }
   footer .wr .contacts { margin-left: 115px; }
-  footer .wr .subscribe { margin-right: 35px; } }
-@media only screen and (max-width: 767px) { header .wr .logotype { display: block; position: relative; width: 100%; height: 100px; background-repeat: no-repeat; background-position: center; background-color: #eba244; background-size: contain; }
+  footer .wr .subscribe { margin-right: 55px; } }
+@media only screen and (max-width: 768px) { header .wr .logotype { display: block; position: relative; width: 100%; height: 100px; background-repeat: no-repeat; background-position: center; background-color: #eba244; background-size: contain; }
   header .wr .soc { padding: 20px 0; text-align: center; }
   header .wr .soc .soc-pages { padding: 10px 0; float: left; text-align: center; width: 100%; }
   header .wr .soc .soc-pages a { font-size: 18px; line-height: unset; }
@@ -554,7 +554,7 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   footer .wr .subscribe { width: 50%; padding: 0; margin: 0; }
   footer .wr .subscribe p:nth-of-type(1) { text-align: left; }
   footer .wr .subscribe p:nth-of-type(2) input[type="button"] { padding: 6px; } }
-@media only screen and (max-width: 639px) { header .wr .logotype { display: block; position: relative; width: 100%; height: 100px; background-repeat: no-repeat; background-position: center; background-color: #eba244; }
+@media only screen and (max-width: 640px) { header .wr .logotype { display: block; position: relative; width: 100%; height: 100px; background-repeat: no-repeat; background-position: center; background-color: #eba244; }
   header .wr .soc { padding: 20px 0; }
   header .wr .soc .soc-pages { padding: 10px 0; }
   header .wr .soc .soc-pages a { font-size: 18px; line-height: unset; }
@@ -600,16 +600,35 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   footer .wr .subscribe { width: 100%; text-align: center; }
   footer .wr .subscribe p:nth-of-type(1) { text-align: center; }
   footer .wr .subscribe p:nth-of-type(2) { width: 75%; display: inline-block; } }
-@media only screen and (max-width: 479px) { header .wr .soc .soc-pages a { display: block; font-size: 24px; margin: 10px; }
+@media only screen and (max-width: 480px) { header .wr .soc .soc-pages a { display: block; font-size: 24px; margin: 10px; }
   header .wr .soc .soc-net { float: left; width: 100%; text-align: center; display: block; padding: 25px 0; }
   header .wr .soc .soc-net a { width: 20%; height: 96px; margin: 0 5px; line-height: 155px; }
   header .wr .soc .soc-net a span { width: 72px; height: 72px; }
   header .wr .soc .number-phone { display: block; width: 100%; float: left; text-align: center; margin-bottom: 25px; font-size: 30px; }
   header .wr .display-phone-menu { text-align: center; }
-  header .wr .display-phone-menu span { border-radius: 50%; margin: 20px 0; width: 50px; line-height: 45px; height: 50px; font-size: 30px; border: 1px solid #fff; color: #fff; }
+  header .wr .display-phone-menu span { border-radius: 50%; margin: 20px 0; width: 50px; line-height: 45px; height: 50px; font-size: 30px; border: 1px solid #131313; color: #131313; }
+  header .wr .phone-menu { bottom: -307px; }
   header .wr .phone-menu a { font-size: 25px; }
-  main .wr .ytp-cued-thumbnail-overlay { width: 480px; } }
-@media only screen and (max-width: 374px) { header .wr .soc .soc-net a { height: 72px; line-height: 120px; }
+  main .slick { height: 320px; }
+  main .slick .wr .slick-slide { height: 320px; }
+  main .slick .wr .slick-slide .title h2 { font-size: 30px; }
+  main .slick .wr .slick-slide .title p { font-size: 16px; }
+  main .slick .wr .slick-slide .programs-name { width: 170px; padding: 15px; height: 150px; }
+  main .wr .community iframe { width: 100%; height: 320px; }
+  main .wr .community .corp-stars { height: 240px; font-size: 23px; }
+  main .wr .community #calendar2 { height: 240px; word-spacing: 22px; }
+  main .wr .community .school { width: 100%; padding: 30px 15% 0; height: 450px; }
+  main .wr .community .club-graduate { width: 100%; height: 410px; }
+  main .wr .community .club-graduate h3 { text-align: center; }
+  main .wr .community .club-graduate ul { margin-left: 15%; margin-bottom: 40px; }
+  main .wr .partners .coats li p { font-size: 18px; }
+  main .wr .partners .coats li:nth-of-type(2) { background-position: 83px 10px; }
+  main .wr .partners .coats li:nth-of-type(3) { background-position: 83px 25px; }
+  footer .wr { padding-top: 130px; }
+  footer .wr .logotype { width: 100%; height: 125px; background-repeat: no-repeat; background-position: center; background-color: #eaa245; }
+  footer .wr .copyright { top: 95%; left: 38%; }
+  footer .wr .subscribe { margin-bottom: 30px; } }
+@media only screen and (max-width: 375px) { header .wr .soc .soc-net a { height: 72px; line-height: 120px; }
   header .wr .soc .soc-net a span { width: 60px; height: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
