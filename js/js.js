@@ -5,8 +5,8 @@ $(document).ready( function () {
         // fade: true,
         arrows: false,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 1000
@@ -42,8 +42,8 @@ $(document).ready( function () {
         // dots: true,
         // fade: true,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 1000
@@ -74,8 +74,8 @@ $(document).ready( function () {
         // ]
     });
 
-    $('.display-phone-menu span').on('click', function() {
-        $('.phone-menu').toggle('slow');
-    });
+    // $('.display-phone-menu span').on('click', function() {
+    //     $('.phone-menu').toggle('slow');
+    // });
 
 });
