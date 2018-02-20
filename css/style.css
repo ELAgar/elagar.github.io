@@ -638,7 +638,7 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   main .slick .wr .slick-slide .programs-name { width: 120px; height: 120px; font-size: 15px; line-height: 20px; }
   main .slick .wr .slick-dots { bottom: 15px; }
   main .wr .community iframe { height: 240px; }
-  main .wr .community #calendar2 { width: 100%; word-spacing: 41px; }
+  main .wr .community #calendar2 { width: 100%; height: 280px; word-spacing: 41px; }
   main .wr .community .corp-stars { width: 100%; height: 240px; }
   main .wr .community .school { padding: 30px 8% 0; }
   main .wr .dignity h2 { font-size: 26px; }
