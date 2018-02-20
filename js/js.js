@@ -75,7 +75,7 @@ $(document).ready( function () {
     });
 
     $('.display-phone-menu span').click(function() {
-        $('.phone-menu').toggle();
+        $('.phone-menu').toggle('normal');
     });
 
 });
