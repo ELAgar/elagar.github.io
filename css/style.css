@@ -610,7 +610,7 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   header .wr .phone-menu { bottom: -307px; }
   header .wr .phone-menu a { font-size: 25px; }
   main .slick { height: 320px; }
-  main .slick .wr .slick-slide { height: 320px; }
+  main .slick .wr .slick-slide { height: 320px; background-position: center center; }
   main .slick .wr .slick-slide .title h2 { font-size: 30px; }
   main .slick .wr .slick-slide .title p { font-size: 16px; }
   main .slick .wr .slick-slide .programs-name { width: 170px; padding: 15px; height: 150px; }
@@ -629,6 +629,31 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   footer .wr .copyright { top: 95%; left: 38%; }
   footer .wr .subscribe { margin-bottom: 30px; } }
 @media only screen and (max-width: 375px) { header .wr .soc .soc-net a { height: 72px; line-height: 120px; }
-  header .wr .soc .soc-net a span { width: 60px; height: 60px; } }
+  header .wr .soc .soc-net a span { width: 60px; height: 60px; }
+  main .slick { height: 240px; }
+  main .slick .wr .slick-slide { height: 240px; }
+  main .slick .wr .slick-slide .title { bottom: 40px; }
+  main .slick .wr .slick-slide .title h2 { font-size: 21px; }
+  main .slick .wr .slick-slide .title p { font-size: 13px; }
+  main .slick .wr .slick-slide .programs-name { width: 120px; height: 120px; font-size: 15px; line-height: 20px; }
+  main .slick .wr .slick-dots { bottom: 15px; }
+  main .wr .community iframe { height: 240px; }
+  main .wr .community #calendar2 { width: 100%; word-spacing: 41px; }
+  main .wr .community .corp-stars { width: 100%; height: 240px; }
+  main .wr .community .school { padding: 30px 8% 0; }
+  main .wr .dignity h2 { font-size: 26px; }
+  main .wr .dignity ul li { width: 100%; }
+  main .wr .dignity ul li .image { background-position: center 35px; }
+  main .wr .dignity ul li:nth-of-type(2) .image { background-position: center 0; }
+  main .wr .dignity ul li:nth-of-type(3) .image { background-position: center 35px; }
+  main .wr .dignity button { position: absolute; bottom: 0; left: 0; width: 100%; }
+  main .wr .magazine .description { width: 90%; margin-left: 5%; }
+  main .wr .social-projects .left { height: 1090px; }
+  main .wr .partners .coats li p { padding: 0 15px; }
+  main .wr .partners .coats li:nth-of-type(2) { background-position: 50px 10px; }
+  main .wr .partners .coats li:nth-of-type(3) { background-position: 50px 25px; }
+  footer .wr .copyright { left: 35%; } }
+@media only screen and (max-width: 360px) { main .wr .community #calendar2 { word-spacing: 39px; }
+  main .wr .community .club-graduate ul { margin-left: 7%; } }
 
 /*# sourceMappingURL=style.css.map */
