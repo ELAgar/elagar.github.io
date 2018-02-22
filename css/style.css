@@ -301,6 +301,8 @@ ul.bxslider { list-style: none; }
 
 .slick-arrow.slick-hidden { display: none; }
 
+body { background-image: url("../img/bg-orange-her.png"); background-repeat: no-repeat; background-size: contain; }
+
 header .wr .logotype { position: absolute; top: 0; left: 0; width: 135px; height: 125px; z-index: 1000; }
 header .wr .soc { width: 100%; float: left; padding-left: 135px; background-color: #131313; }
 header .wr .soc .soc-pages { float: left; padding: 0 5px; }
@@ -324,7 +326,7 @@ header .wr nav a:last-child { position: absolute; top: 0; right: 0; background-c
 header .wr nav a:hover { text-decoration: underline; background-color: #313135; border-bottom-color: #313135; }
 header .wr nav a.active { border-bottom-color: #eaa245; }
 header .wr .display-phone-menu { display: none; width: 100%; text-align: right; }
-header .wr .display-phone-menu span { transition: all 0.5s ease-in; display: inline-block; margin: 15px 15px; width: 20px; height: 20px; font-weight: bold; font-size: 30px; color: black; line-height: 18px; letter-spacing: 1px; }
+header .wr .display-phone-menu span { transition: all .5s ease-in; display: inline-block; margin: 15px 15px; width: 20px; height: 20px; font-weight: bold; font-size: 30px; color: black; line-height: 18px; letter-spacing: 1px; }
 header .wr .phone-menu { display: none; position: absolute; background: #131313a8; width: 100%; text-align: center; bottom: -227px; z-index: 1000; padding-bottom: 10px; }
 header .wr .phone-menu a { display: inline-block; width: 100%; padding: 8px 0; text-decoration: none; color: #fff; }
 header .wr .phone-login { display: none; position: absolute; right: 10px; top: 20px; color: #fff; text-decoration: none; }
@@ -342,13 +344,14 @@ main .slick .wr .slick-dots li button { background: #fff; width: 8px; height: 8p
 main .slick .wr .slick-dots li button:before { content: none; display: none; }
 main .slick .wr .slick-dots li.slick-active button { padding: 5px; }
 main .community .corp-stars, main .community #calendar2, main .community iframe { float: left; }
-main .community .corp-stars { width: 320px; height: 300px; font-size: 30px; color: #eaa245; text-transform: uppercase; line-height: 140%; padding: 30px; }
-main .community .tab-slider { width: 640px; height: 510px; float: left; }
+main .community .corp-stars { width: 320px; height: 300px; font-size: 30px; color: #eaa245; text-transform: uppercase; line-height: 140%; padding: 30px; background: #fff; }
+main .community #calendar2 { display: block; word-spacing: 33px; padding-top: 20px; line-height: 32px; }
+main .community .tab-slider { width: 640px; background: #fff; height: 510px; float: left; }
 main .community .school { width: 320px; height: 510px; float: left; background-color: #313135; padding: 20px; }
 main .community .school h4 { color: #fff; text-transform: uppercase; margin-bottom: 30px; font-size: 16px; font-weight: bold; }
 main .community .school .img-school { background-image: url("../img/news.jpg"); background-repeat: no-repeat; background-size: cover; height: 155px; margin-bottom: 40px; }
 main .community .school p { font-size: 14px; color: #b1b1b1; line-height: 125%; }
-main .community .club-graduate { width: 320px; height: 510px; position: relative; float: left; padding: 35px 20px 0 20px; }
+main .community .club-graduate { width: 320px; height: 510px; background: #fff; position: relative; float: left; padding: 35px 20px 0 20px; }
 main .community .club-graduate h3 { text-transform: capitalize; color: #eaa245; font-size: 24px; margin-bottom: 50px; font-family: "Lato"; font-weight: bold; margin-left: 10px; }
 main .community .club-graduate ul { margin-bottom: 100px; padding-left: 16px; margin-left: 10px; }
 main .community .club-graduate ul li { color: #eaa245; list-style: square; margin-bottom: 15px; }
@@ -385,7 +388,7 @@ main .magazine .description ul li:nth-of-type(2) span { background-image: url(".
 main .magazine .description ul li:nth-of-type(3) { text-align: right; }
 main .magazine .description ul li:nth-of-type(3) span { background-image: url("../img/open-magazine.png"); background-position: 0 0; }
 main .social-projects .left, main .social-projects .right { width: 640px; height: 510px; float: left; }
-main .social-projects .left { padding-top: 60px; position: relative; }
+main .social-projects .left { padding-top: 60px; background: #fff; position: relative; }
 main .social-projects .left h2 { font-weight: bold; font-size: 30px; color: #eaa245; text-align: right; padding-right: 10px; margin-bottom: 50px; }
 main .social-projects .left .h2_phone { display: none; }
 main .social-projects .left h3, main .social-projects .left p { font-size: 22px; color: #48484f; }
@@ -414,7 +417,7 @@ main .social-projects .right .h2_phone { display: none; }
 main .social-projects .right h3, main .social-projects .right p { text-align: center; color: #fff; }
 main .social-projects .right h3 { font-size: 22px; font-weight: bold; text-transform: uppercase; margin-bottom: 35px; }
 main .social-projects .right p { font-size: 18px; line-height: 140%; padding: 0 70px; }
-main .partners { padding: 60px 0 65px; }
+main .partners { background: #fff; padding: 60px 0 65px; }
 main .partners h2 { font-weight: bold; font-size: 30px; color: #48484f; text-align: center; margin-bottom: 75px; }
 main .partners .coats { text-align: center; margin-bottom: 40px; }
 main .partners .coats li { width: 240px; height: 230px; display: inline-block; position: relative; text-align: center; background-image: url("../img/rspp.png"); background-position: 35px 5px; background-repeat: no-repeat; }
@@ -459,7 +462,7 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
 
 @media only screen and (max-width: 1200px) { header .wr nav a { padding: 15px 13px; font-size: 15px; }
   header .wr nav a:nth-of-type(8) { padding: 15px 18px; }
-  main .wr .community iframe { width: 542px; }
+  main .wr .community iframe { width: 560px; }
   main .wr .community .tab-slider { width: 542px; }
   main .wr .social-projects .left, main .wr .social-projects .right { width: 50%; }
   footer .wr .logotype { width: 115px; height: 105px; background-size: contain; }
@@ -476,7 +479,7 @@ footer .wr .subscribe p:nth-of-type(2) input[type="button"]:hover { background-c
   main .slick .wr .slick-dots { padding-left: 80px; }
   main .wr .community iframe { width: 498px; height: 263px; }
   main .wr .community .corp-stars { width: 263px; height: 263px; font-size: 25px; }
-  main .wr .community #calendar2 { width: 263px; height: 263px; }
+  main .wr .community #calendar2 { width: 263px; height: 263px; word-spacing: 25px; line-height: 27px; }
   main .wr .community .tab-slider { width: 498px; }
   main .wr .community .school, main .wr .community .club-graduate { width: 263px; }
   main .wr .community .school .img-school { height: 125px; }
