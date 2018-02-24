@@ -1,77 +1,38 @@
-$(document).ready(function () {
-// MAIN-SLIDER
+$(document).ready( function () {
+
     $('.slick .wr').slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 1000,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    autoplay: false
-                }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    autoplay: false
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    autoplay: false
-                }
-            },
-            {
-                breakpoint: 360,
-                settings: {
-                    autoplay: false
-                }
-            }
-        ]
+        speed: 1000
     });
 
-    // MINI-SLIDER
-    $('.wr #tabs .tab').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 1000,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    autoplay: false
-                }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    autoplay: false
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    autoplay: false
-                }
-            },
-            {
-                breakpoint: 360,
-                settings: {
-                    autoplay: false
-                }
-            }
-        ]
+
+
+    if ($(window).width() <= 768) {
+        $('.top-nav-menu').addClass('-phone');
+    }
+
+    $('.log-search-user .phone-button').on('click', function() {
+        $('.top-nav-menu').toggle();
     });
 
-    $('.display-phone-menu span').click(function () {
-        $('.phone-menu').toggle();
+    $('.log-search-user .search-button').on('click', function() {
+        $('.log-search-user .search').toggle('slow');
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
