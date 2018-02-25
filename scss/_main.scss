@@ -3804,7 +3804,7 @@ body {
     }
 }
 
-@include bp(max-width, $bp-phone) {
+@include bp(max-width, $bp-portret-tablet) {
     .wr {
         max-width: 375px;
     }
@@ -4107,5 +4107,11 @@ body {
                 }
             }
         }
+    }
+}
+
+@include bp(max-width, $bp-android-phone) {
+    .wr {
+        max-width: 360px;
     }
 }
