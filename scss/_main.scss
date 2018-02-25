@@ -4044,6 +4044,10 @@ body {
                             padding: 30px 0;
                         }
 
+                        &, & .user .avatar {
+                            margin-right: 0;
+                        }
+
                         .contests-button {
                             width: 90%;
                             margin-left: 5%;

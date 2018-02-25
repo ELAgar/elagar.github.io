@@ -699,6 +699,7 @@ body footer .wr .soc-net .soc-icons a:nth-of-type(5):hover { background-color: #
   body main .garden .wr .mini-principles .description { padding: 30px !important; }
   body main .garden .wr .mini-principles .description .soc-actions { text-align: center; left: 0; }
   body main .soc-section .wr .most-active { padding: 30px 0; }
+  body main .soc-section .wr .most-active, body main .soc-section .wr .most-active .user .avatar { margin-right: 0; }
   body main .soc-section .wr .most-active .contests-button { width: 90%; margin-left: 5%; }
   body main .soc-section .wr .magazines-rating, body main .soc-section .wr .readers-write { margin-left: 0; margin-right: 0; }
   body main .soc-section .wr .magazines-rating .magazine, body main .soc-section .wr .magazines-rating .post, body main .soc-section .wr .readers-write .magazine, body main .soc-section .wr .readers-write .post { width: 100%; height: auto; }
