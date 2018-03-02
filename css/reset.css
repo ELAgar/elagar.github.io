@@ -1,0 +1,117 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+*, p, h1, h2, h3, h4, h5, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    transition: all.3s ease-in;
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 65px;
+    position: relative;
+}
+.title:after {
+    content: '';
+    display: block;
+    width: 47px;
+    height: 5px;
+    background: #424242;
+    bottom: -15px;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+}
+.title__title,
+.title__intro {
+    font-family: "Helvetica Neue", sans-serif;
+    color: #424242;
+}
+.title__title {
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.title__intro {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.step-left__number,
+.step-right__number {
+    width: 105px;
+    height: 105px;
+    line-height: 70px;
+    background: #de2b24;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    z-index: 10000;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Helvetica", sans-serif;
+}
+.step-left__number {
+    left: 0;
+}
+.step-right__number {
+    transform: translate(50%, -50%);
+    right: 0;
+}
+.step-left__number span,
+.step-right__number span {
+    display: block;
+    font-family: "Helvetica", sans-serif;
+    height: 40px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.-white * {
+    color: white;
+}
+.-white:after {
+    background: #ffffff;
+}
+.circle:after {
+    content: none;
+}
+
+.col,
+.col-lg,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8{
+    padding: 0;
+}
