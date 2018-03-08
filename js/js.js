@@ -35,6 +35,8 @@ $(document).ready(function() {
 		var windScroll = window.pageYOffset;
 		var scrollService = $('#what-i-do').offset().top - windScroll;
 		var scrollWork= $('#my-works').offset().top - windScroll;
+		var scrollSkills= $('#my-skills').offset().top - windScroll;
+		var scrollContacts= $('#contact').offset().top - windScroll;
 
 		$('header').css('background-position-y', windScroll / 1.15);
 
@@ -56,15 +58,15 @@ $(document).ready(function() {
 			$('.menu__item a[href="#my-works"]').addClass('active');
 		}
 
-		// if (scrollSkills <= 0) {
-		// 	items.removeClass('active');
-		// 	$('.menu__item a[href="#skills"]').addClass('active');
-		// }
+		if (scrollSkills <= 0) {
+			items.removeClass('active');
+			$('.menu__item a[href="#my-skills"]').addClass('active');
+		}
 
-		// if (scrollContacts <= 0) {
-		// 	items.removeClass('active');
-		// 	$('.menu__item a[href="#contacts"]').addClass('active');
-		// }
+		if (scrollContacts <= 0) {
+			items.removeClass('active');
+			$('.menu__item a[href="#contact"]').addClass('active');
+		}
 	});
 
 
