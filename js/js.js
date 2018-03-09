@@ -23,7 +23,7 @@ $(document).ready(function() {
 		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
         if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
 		    $('html, body').animate({
-		    	scrollTop: $(scroll_el).offset().top 
+		    	scrollTop: $(scroll_el).offset().top
 		    }, 1000); // анимируем скроолинг к элементу scroll_el
         }
 	    return false; // выключаем стандартное действие
@@ -31,16 +31,24 @@ $(document).ready(function() {
 
 	// =============================================
 
-	$(window).on('load scroll', function() {
+	$(window).on('load scroll resize', function() {
 		var windScroll = window.pageYOffset;
 		var scrollService = $('#what-i-do').offset().top - windScroll;
 		var scrollWork= $('#my-works').offset().top - windScroll;
 		var scrollSkills= $('#my-skills').offset().top - windScroll;
 		var scrollContacts= $('#contact').offset().top - windScroll;
+		var dw = $(document).width();
 
-		$('header').css('background-position-y', windScroll / 1.15);
+		if (dw >= 768) {
+			$('header').css('background-position-y', '0');
+			$('header').css('background-position-y', windScroll / 1.15);
+		} 
 
-		console.log(scrollWork + "\n" + scrollService);
+		if ( dw <= 767 ) {
+			$('header').css('background-position-y', 'unset');
+			$('header').css('background-attachment', 'fixed');
+		}
+
 		var items = $('.menu__item a');
 
 		if (windScroll >= 0 ) {
