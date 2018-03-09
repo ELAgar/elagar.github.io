@@ -147,16 +147,15 @@ main * {
     height: 300px;
     transition: all.3s ease-in;
     padding: 50px 30px;
-    box-shadow: inset 0 0 0 transparent;
     cursor: pointer;
+    position: relative;
     border: 1px solid #cfcfcf;
     
 
-    transform-origin: bottom;
+    
 }
 .service-bg:hover {
-    background-color: #f9f9f9;
-    transform: rotate3d(1,0,0,20deg);
+    transform: scale(1.15);
 }
 .service__icon {
     margin-bottom: 30px;
@@ -486,5 +485,14 @@ footer * {
     }
     .my-works .wrap .wrap__opacity{
         height: 200px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .my-works .wrap {
+        height: 220px;
+    }
+    .my-works .wrap .wrap__opacity{
+        height: 160px;
     }
 }
