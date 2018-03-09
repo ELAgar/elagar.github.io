@@ -476,6 +476,11 @@ footer * {
         max-height: 90vh;
     }
 
+    .menu__item a {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
     .my-works .wrap {
         height: 260px;
     }
