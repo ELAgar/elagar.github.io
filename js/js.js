@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
 	var scrollEl = $('#what-i-do');
 
 	$('.icon-wrap .icon').on('click', function() {
@@ -41,6 +40,10 @@ $(document).ready(function() {
 
 		if ( dw >= 768 ) {
 			$('header').css('background-position-y', windScroll / 1.15);
+		}
+
+		if ( dw <= 767 ) {
+			$('header').css('background-position-y', windScroll);
 		}
 
 		var items = $('.menu__item a');
