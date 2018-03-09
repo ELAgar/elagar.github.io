@@ -43,27 +43,27 @@ $(document).ready(function() {
 		console.log(scrollWork + "\n" + scrollService);
 		var items = $('.menu__item a');
 
-		if (windScroll >= 0) {
+		if (windScroll >= 0 ) {
 			items.removeClass('active');
 			$('.menu__item a[href="#"]').addClass('active');
 		}
 
-		if (scrollService <= 0) {
+		if (scrollService <= 0 || scrollService <= 5) {
 			items.removeClass('active');
 			$('.menu__item a[href="#what-i-do"]').addClass('active');
 		}
 
-		if (scrollWork <= 0) {
+		if (scrollWork <= 0 || scrollWork <= 5) {
 			items.removeClass('active');
 			$('.menu__item a[href="#my-works"]').addClass('active');
 		}
 
-		if (scrollSkills <= 0) {
+		if (scrollSkills <= 0 || scrollSkills <= 5) {
 			items.removeClass('active');
 			$('.menu__item a[href="#my-skills"]').addClass('active');
 		}
 
-		if (scrollContacts <= 0) {
+		if (scrollContacts <= 0 || scrollContacts <= 5) {
 			items.removeClass('active');
 			$('.menu__item a[href="#contact"]').addClass('active');
 		}
