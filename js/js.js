@@ -39,14 +39,8 @@ $(document).ready(function() {
 		var scrollContacts= $('#contact').offset().top - windScroll;
 		var dw = $(document).width();
 
-		if (dw >= 768) {
-			$('header').css('background-position-y', '0');
+		if ( dw >= 768 ) {
 			$('header').css('background-position-y', windScroll / 1.15);
-		} 
-
-		if ( dw <= 767 ) {
-			$('header').css('background-position-y', 'unset');
-			$('header').css('background-attachment', 'fixed');
 		}
 
 		var items = $('.menu__item a');
