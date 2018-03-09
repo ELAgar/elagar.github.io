@@ -11,7 +11,7 @@ body, html {
 }
 
 a {
-    transition: all.3s ease-in;
+    transition: all.2s ease-in;
     text-decoration: none;
     color: #fff;
 }
@@ -31,6 +31,18 @@ a:hover {
     to {
         margin-top: 20px;
         opacity: 0;
+    }
+}
+
+@keyframes shadow-blink {
+    from {
+        text-shadow: 0 0 10px transparent;
+    }
+    50% {
+        text-shadow: 0 0 10px #ff3838;
+    }
+    to {
+        text-shadow: 0 0 10px transparent;
     }
 }
 

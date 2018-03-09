@@ -35,14 +35,22 @@
         </div>
     </header>
     <div class="sticky-menu">
-        <a href="#" class="sticky__name">Elvin Agaragimow</a>
-        <ul class="menu">
-            <li class="menu__item"><a href="#" class="active">home</a></li>
-            <li class="menu__item"><a href="#what-i-do">service</a></li>
-            <li class="menu__item"><a href="#my-works">work</a></li>
-            <li class="menu__item"><a href="#my-skills">skills</a></li>
-            <li class="menu__item"><a href="#contact">contact</a></li>
-        </ul>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-6 col-lg-5">
+                    <a href="#" class="sticky__name">Elvin Agaragimow</a>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="active">home</a></li>
+                        <li class="menu__item"><a href="#what-i-do">service</a></li>
+                        <li class="menu__item"><a href="#my-works">work</a></li>
+                        <li class="menu__item"><a href="#my-skills">skills</a></li>
+                        <li class="menu__item"><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <main>
         <div id="what-i-do" class="what-i-do">
@@ -170,7 +178,7 @@ I create modern and responsive Web Application, will be work on any screen.
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="skill">
                             <div class="skill__circle">
                                 <div class="circle__hidden"></div>
@@ -181,7 +189,7 @@ I create modern and responsive Web Application, will be work on any screen.
                             </h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="skill">
                             <div class="skill__circle">
                                 <div class="circle__hidden"></div>
@@ -192,7 +200,7 @@ I create modern and responsive Web Application, will be work on any screen.
                             </h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="skill">
                             <div class="skill__circle">
                                 <div class="circle__hidden"></div>
@@ -203,7 +211,7 @@ I create modern and responsive Web Application, will be work on any screen.
                             </h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="skill">
                             <div class="skill__circle">
                                 <div class="circle__hidden"></div>
@@ -231,9 +239,9 @@ I create modern and responsive Web Application, will be work on any screen.
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <form action="#" class="form" id="form">
-                            <input class="form__name" type="text" placeholder="Name">
-                            <input class="form__email" type="email" placeholder="E-mail">
-                            <textarea name="message" class="form__message" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                            <input class="form__name" type="text" placeholder="Name" required>
+                            <input class="form__email" type="email" placeholder="E-mail" required>
+                            <textarea name="message" class="form__message" id="message" cols="30" rows="7" placeholder="Message" required></textarea>
                             <input type="submit" value="Send message" class="form__submit">
                         </form>
                     </div>
@@ -247,12 +255,19 @@ I create modern and responsive Web Application, will be work on any screen.
             <div class="row">
                 <div class="col-12">
                     <ul class="footer-menu">
-                        <li class="footer__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="footer__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="footer__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li class="footer__item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li class="footer__item"><a href="#"><i class="fa fa-"></i></a></li>
+                        <li class="footer__item"><a target="_blank" href="https://www.facebook.com/MeJIBuH4uK"><i class="fa fa-facebook"></i></a></li>
+                        <li class="footer__item"><a target="_blank" href="https://www.linkedin.com/in/elvin-agaragimow-40537b15a/"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="footer__item"><a target="_blank" href="https://plus.google.com/u/1/109792492921236662471?hl=ru"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="footer__item"><a target="_blank" href="https://www.instagram.com/elvin_agaragimow/?hl=ru"><i class="fa fa-instagram"></i></a></li>
                     </ul>
+                    <p class="footer__text">
+                        Made with <i class="heart fa fa-heart"></i> in Ukraine, Dnepr
+                    </p>
+                </div>
+                <div class="col-12">
+                    <div class="copyright">
+                        &copy; 2018 Elvin Agaragimow
+                    </div>
                 </div>
             </div>
         </div>

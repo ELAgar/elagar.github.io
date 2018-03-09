@@ -1,10 +1,6 @@
 @import "reset.css";
 @import "fonts.css";
 
-html {
-    height: 5000px;
-}
-
 
 header * {
     color: #fff;
@@ -105,7 +101,7 @@ header:before {
     font-family: "Lato", sans-serif;
 }
 .sticky__name:hover {
-    transform: translate3d(15px, 15px, 15px);
+    transform: translate3d(15px, 15px, 15px) scale(1.09);
     text-shadow: -15px -15px 8px grey;
 }
 
@@ -357,6 +353,7 @@ main * {
     border: 1px solid #e2e2e2;
     border-radius: 4px;
     padding: 10px 0 10px 15px;
+    outline: none;
 }
 .form__message {
     padding-top: 15px;
@@ -386,5 +383,103 @@ main * {
 
 footer {
     background-color: #222;
+    padding: 50px 0;
+}
+footer * {
+    color: #fff;
+    
 }
 
+.footer-menu {
+    margin-bottom: 35px;
+    text-align: center;
+    width: 100%;
+}
+.footer__item {
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer__item:last-child {
+    margin-right: 0;
+}
+.footer__item a {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+.footer__item a:hover,
+.footer__item a:hover i {
+    color: rgba(255,255,255,.6);
+    border-color: rgba(255,255,255,.6);
+}
+.footer__item a i {
+    transition: all.2s ease-in;
+    width: 20px;
+    text-align: center;
+    color: #444;
+}
+
+.footer__text {
+    margin-bottom: 15px;
+}
+.heart {
+    color: #FF3838;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 5px;
+
+    animation-name: shadow-blink;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.copyright, .footer__text {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 991px) {
+    .sticky-menu {
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    .menu {
+        float: none;
+    }
+
+    .what-i-do,
+    .my-works,
+    .my-skills,
+    .contact {
+        padding-top: 150px;
+    }
+
+    .service-bg {
+        margin-bottom: 30px;
+    }
+
+    .skill {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        padding: 25vh 0 250px 0;
+        min-height: 90vh;
+        max-height: 90vh;
+    }
+
+    .my-works .wrap {
+        height: 260px;
+    }
+    .my-works .wrap .wrap__opacity{
+        height: 200px;
+    }
+}
