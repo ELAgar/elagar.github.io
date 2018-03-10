@@ -43,7 +43,7 @@ $(document).ready(function() {
 		}
 
 		if ( dw <= 767 ) {
-			$('header').css('background-position-y', windScroll);
+			$('header').css('background-position-y', '0');
 		}
 
 		var items = $('.menu__item a');
