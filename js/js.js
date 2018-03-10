@@ -30,11 +30,28 @@ $(document).ready(function() {
 
 	// =============================================
 
+	$('.sticky__name').on('mouseover', function() {
+		var $this = $(this);
+		setTimeout(function() {
+			$($this).addClass('wow hinge');
+		}, 500);
+		setTimeout(function() {
+			$($this).hide();
+		}, 2500);
+		setTimeout(function() {
+			$($this).removeClass('wow hinge');
+			$($this).show();
+		}, 10000);
+	});
+
+	// =============================================
+
 	$(window).on('load scroll resize', function() {
 		var windScroll = window.pageYOffset;
 		var scrollService = $('#what-i-do').offset().top - windScroll;
 		var scrollWork= $('#my-works').offset().top - windScroll;
 		var scrollSkills= $('#my-skills').offset().top - windScroll;
+		var skill = $('.skill').offset().top - windScroll;
 		var scrollContacts= $('#contact').offset().top - windScroll;
 		var dw = $(document).width();
 
@@ -45,6 +62,8 @@ $(document).ready(function() {
 		if ( dw <= 767 ) {
 			$('header').css('background-position-y', '0');
 		}
+
+		// =============================================
 
 		var items = $('.menu__item a');
 
@@ -68,10 +87,24 @@ $(document).ready(function() {
 			$('.menu__item a[href="#my-skills"]').addClass('active');
 		}
 
+		if (skill <= 550 || skill <= 555) {
+			$('[data-anim~="wrapper"]').css('-webkit-animation-name', 'close-wrapper');
+			$('[data-anim~="first-left"]').css('-webkit-animation-name', 'first-left-spin');
+			$('[data-anim~="first-right"]').css('-webkit-animation-name', 'first-right-spin');
+			$('[data-anim~="second-left"]').css('-webkit-animation-name', 'second-left-spin');
+			$('[data-anim~="second-right"]').css('-webkit-animation-name', 'second-right-spin');
+			$('[data-anim~="third-left"]').css('-webkit-animation-name', 'third-left-spin');
+			$('[data-anim~="third-right"]').css('-webkit-animation-name', 'third-right-spin');
+			$('[data-anim~="fourth-left"]').css('-webkit-animation-name', 'fourth-left-spin');
+			$('[data-anim~="fourth-right"]').css('-webkit-animation-name', 'fourth-right-spin');
+		}
+
 		if (scrollContacts <= 0 || scrollContacts <= 5) {
 			items.removeClass('active');
 			$('.menu__item a[href="#contact"]').addClass('active');
 		}
+
+		// =============================================
 	});
 
 

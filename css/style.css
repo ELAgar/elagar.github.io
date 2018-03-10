@@ -180,6 +180,12 @@ main * {
 .service-bg:hover .service__icon i {
     color: rgba(255,0,0,.6);
 }
+.service-bg b {
+    transition: all.2s ease-in;
+}
+.service-bg:hover b {
+    color: rgba(255,0,0,.6);
+}
 
 
 /*THIRD SCREEN*/
@@ -281,35 +287,66 @@ main * {
     text-align: center;
 }
 
-.skill__circle {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 10px solid rgba(255,0,0,.8);
-    margin: 0 auto;
+.circle-wr {
+    height: 100px;
+    margin-bottom: 30px;
     position: relative;
-    z-index: 100;
-    margin-bottom: 40px;
 }
 
-.circle__hidden {
+.iteration {
     position: absolute;
-    width: 70px;
-    height: 120%;
-    top: -10px;
-    background-color: #F5F5F5;
-    z-index: 1000;
-    left: -10px;
-}
-
-.circle__percent {
-    position: absolute;
-    width: 100%;
-    text-align: center;
     top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
     z-index: 10000;
-    left: 0;
-    transform: translate(0, -50%);
+}
+
+.circle-wrapper {
+  width: 100px; /* Set the size of the progress bar */
+  height: 100px;
+  position: absolute; /* Enable clipping */
+  left: 50%;
+  margin-left: -50px;
+  clip: rect(0px, 100px, 100px, 50px); /* Hide half of the progress bar */
+}
+/* Set the sizes of the elements that make up the progress bar */
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #fd3131;
+  border-radius: 50px;
+  position: absolute;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+/* Using the data attributes for the animation selectors. */
+/* Base settings for all animated elements */
+div[data-anim~=base] {
+  -webkit-animation-iteration-count: 1;  /* Only run once */
+  -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
+  -webkit-animation-timing-function: linear; /* Linear animation */
+}
+
+.circle-wrapper[data-anim~=wrapper] {
+  -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
+  -webkit-animation-delay: 1.35s; /* Wait half of the animation */
+}
+
+.circle[data-anim~=first-right],
+.circle[data-anim~=second-right],
+.circle[data-anim~=third-right],
+.circle[data-anim~=fourth-right] {
+  -webkit-animation-duration: 1.35s;
+}
+
+.circle[data-anim~=first-left] {
+  -webkit-animation-duration: 2s; /* Full animation time */
+}
+
+.circle[data-anim~=second-left] {
+  -webkit-animation-duration: 1.75s; /* Full animation time */
 }
 
 .skill__name {
@@ -428,7 +465,7 @@ footer * {
     margin: 0 5px;
 
     animation-name: shadow-blink;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
