@@ -23,19 +23,6 @@ $(document).ready(function() {
 		$('.choose-city .city-value').text($thisText);
 	});
 
-	// FOCUS ON SEARCH
-
-	var value = $('#form-search input[type="text"]');
-
-	value
-		.on('focus', function () {
-			$(this).val(null);
-		})
-		.on('blur', function () {
-			$(this).val('Поиск по сайту');
-		});
-
-
 	// SHOW-MENU
 
 	$('.show-menu').click(function () {
