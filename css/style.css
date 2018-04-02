@@ -261,7 +261,7 @@ main * {
 }
 
 .my-works .col-lg-4:nth-child(2) .wrap {
-    background-image: url("../img/item2.jpg");
+    background-image: url("../img/item-2.jpg");
 }
 .my-works .col-lg-4:nth-child(3) .wrap {
     background-image: url("../img/item-3.jpg");
