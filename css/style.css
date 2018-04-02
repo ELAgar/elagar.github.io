@@ -196,7 +196,7 @@ main * {
     height: 225px;
     transition: all.3s ease-in;
     margin-bottom: 30px;
-    background-image: url("../img/EKO.png");
+    background-image: url("../img/item-1.jpg");
     background-position: center;
     position: relative;
     background-repeat: no-repeat;
@@ -261,7 +261,7 @@ main * {
 }
 
 .my-works .col-lg-4:nth-child(2) .wrap {
-    background-image: url("../img/garden.png");
+    background-image: url("../img/item2.jpg");
 }
 .my-works .col-lg-4:nth-child(3) .wrap {
     background-image: url("../img/item-3.jpg");
